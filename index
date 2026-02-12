@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Thalita Zahra</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS DIMULAI DI SINI */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* Warna latar belakang dengan tekstur halus */
+            background-color: #fcfcfc;
+            background-image: url('https://www.transparenttextures.com/patterns/white-diamond.png');
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            width: 100%;
+            max-width: 1100px;
+            padding: 60px;
+            display: flex;
+            flex-wrap: wrap; /* Agar responsif di HP */
+            gap: 40px;
+            align-items: flex-start;
+        }
+
+        /* Bagian Teks Kiri */
+        .content {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .title {
+            color: #bd1e1e; /* Warna merah gelap sesuai gambar */
+            font-family: 'Oswald', sans-serif;
+            font-size: clamp(60px, 10vw, 110px); /* Ukuran font fleksibel */
+            line-height: 0.85;
+            letter-spacing: -2px;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            color: #bd1e1e;
+            font-family: 'Oswald', sans-serif;
+            font-size: clamp(40px, 6vw, 70px);
+            margin-bottom: 30px;
+            letter-spacing: -1px;
+        }
+
+        .description {
+            max-width: 550px;
+        }
+
+        .description p {
+            font-weight: 700;
+            font-size: 15px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            line-height: 1.5;
+            color: #444;
+        }
+
+        .footer-info {
+            margin-top: 50px;
+            font-size: 14px;
+            text-transform: uppercase;
+            line-height: 1.4;
+            color: #555;
+        }
+
+        .name-bold {
+            font-weight: 800;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* Bagian Visual Kanan */
+        .visuals {
+            flex: 0.8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            min-width: 300px;
+        }
+
+        .profile-pic-container {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 8px solid white;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .profile-pic-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .artwork-container {
+            width: 100%;
+            max-width: 350px;
+            background: white;
+            padding: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transform: rotate(2deg); /* Sedikit miring agar estetik */
+            transition: transform 0.3s ease;
+        }
+
+        .artwork-container:hover {
+            transform: rotate(0deg) scale(1.05);
+        }
+
+        .artwork-container img {
+            width: 100%;
+            display: block;
+        }
+
+        /* Pengaturan untuk Layar Kecil (HP) */
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px;
+                text-align: center;
+            }
+            .description, .content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .artwork-container {
+                transform: rotate(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="content">
+            <h1 class="title">ABOUT ME</h1>
+            <h2 class="subtitle">WHO AM I?</h2>
+            
+            <div class="description">
+                <p>HAI! NAMA SAYA THALITA ZAHRA.</p>
+                <p>SAYA ADALAH SESEORANG YANG SUKA MENGGAMBAR, TERUTAMA ANIME DAN SKETSA.</p>
+                <p>SAYA JUGA SUKA MENONTON ANIME DAN BERMAIN GAME.</p>
+                <p>BAGI SAYA, MENGGAMBAR BUKAN HANYA HOBI, TAPI CARA UNTUK MENGEKSPRESIKAN IMAJINASI DAN PERASAAN.</p>
+                <p>SAYA INGIN TERUS BELAJAR DAN MENGEMBANGKAN KEMAMPUAN AGAR BISA MEMBUAT KARYA YANG LEBIH BAIK.</p>
+            </div>
+
+            <div class="footer-info">
+                <span class="name-bold">THALITA ZAHRA</span>
+                <p>17 YEARS OLD</p>
+                <br>
+                <p>JL. KEDONDONG DALAM IV NO.66, GN.<br>
+                   KELUA, KEC. SAMARINDA ULU, KOTA<br>
+                   SAMARINDA, KALIMANTAN TIMUR 75243</p>
+            </div>
+        </div>
+
+        <div class="visuals">
+            <div class="profile-pic-container">
+                <img src="TOM.jpeg">
+            </div>
+            
+            <div class="artwork-container">
+                <img src="UMA.jpeg" width="500">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
